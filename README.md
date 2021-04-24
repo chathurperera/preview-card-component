@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://your-solution-url.com)
+- Solution URL: [Live Site](https://preview-card-component-r9sp5fgpa-chathurperera.vercel.app)
 - Live Site URL: [Solution URL](https://preview-card-component-r9sp5fgpa-chathurperera.vercel.app)
 
 ## My process
