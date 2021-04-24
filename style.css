@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* PRIMARY COLORS */
+
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* NEUTRAL COLORS */
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  /* TYPO */
+
+  --lexend: "Lexend Deca", sans-serif;
+  --big-shoulder: "Big Shoulders Display", cursive;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--very-light-gray);
+}
+p {
+  font-family: var(--lexend);
+  color: var(--transparent-white);
+  line-height: 1.5;
+  width: 70%;
+  margin-bottom: 4em;
+}
+
+h1 {
+  font-family: var(--big-shoulder);
+  margin: 1em 0em;
+}
+
+
+/* ========= LEARN MORE BUTTONS ========= */
+
+.cta {
+  background-color: var(--very-light-gray);
+  padding: 0.5em 0.8em;
+  border-radius: 15px;
+  color: var(--transparent-white);
+  font-family: var(--lexend);
+  text-decoration: none;
+  position: absolute;
+  bottom: 5%;
+  font-size: .8rem;
+}
+.cta:hover{
+    background-color: transparent;
+    color: var(--very-light-gray);
+    border: 1px solid var(--very-light-gray);
+}
+.card {
+  width: 72%;
+  margin: 12vh auto;
+  border-radius: 12px;
+  display: flex;
+}
+.card div {
+  position: relative;
+  padding: 2em;
+  color: #fff;
+}
+
+
+/* ========= SECTIONS IN THE CARD ========= */
+
+.col_1 {
+  background-color: var(--bright-orange);
+  border-radius: 12px 0px 0px 12px;
+}
+.col_1 a {
+  color: var(--bright-orange);
+}
+
+.col_2 {
+  background-color: var(--dark-cyan);
+}
+.col_2 a {
+  color: var(--dark-cyan);
+}
+
+.col_3 {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0px 12px 12px 0px;
+}
+.col_3 a {
+  color: var(--very-dark-cyan);
+}
+
+/* ========= FOOTER SECTION ========= */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 890px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .col_1 {
+    border-radius: 12px 12px 0px 0px;
+  }
+  .col_3 {
+    border-radius: 0px 0px 12px 12px;
+  }
+}
